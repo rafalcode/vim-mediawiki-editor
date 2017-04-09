@@ -46,6 +46,15 @@ Views the article specified in your configured browser. If you don't specify an 
 
 If you don't specify these settings, vim-mediawiki-editor will prompt you when you first run a vim-mediawiki-editor command.
 
+These may be specified in your .vimrc in the following manner:
+```
+let g:mediawiki_editor_uri_scheme = "http"
+```
+
+#### g:mediawiki_editor_uri_scheme
+
+If you have a home made mediawiki installed somewhat lazily, you may be only using http, instead of the default https, so you need to specify http for this variable.
+
 #### g:mediawiki_editor_url
 
 The URL of the site you're editing. For the English wikipedia, that'd be `en.wikipedia.org`.
